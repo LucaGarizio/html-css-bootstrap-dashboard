@@ -1,6 +1,6 @@
 /* DEBUG */
 [class*="col-"]{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     min-height: 150px;
 }
 
@@ -19,7 +19,7 @@ Extra       xxl	          ≥1400px
 /* regole generali */
 body{
     font-family: 'Roboto', sans-serif;
-    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
 }
 
 ul{
@@ -78,9 +78,6 @@ a{
     left: -150px;
 }
 
-.fa-solid .fa-bell{
-    color: #fd7e14;
-}
 
 @media only screen and (min-width: 992px){
     .ms-hidden{
@@ -95,7 +92,6 @@ a{
     #main-content{
         width: calc(100% - 10rem);
     } 
-
 }
 
 @media all and (min-width:991px) {
@@ -113,7 +109,6 @@ a{
 
 /* main */
 /* upper part main content */
-
 @media all and (max-width: 766px) {
    #top-part-main-order1{
     order: -1;
@@ -121,7 +116,7 @@ a{
 }
 
 .content-col img{
-    max-width: 100%;
+    max-width: 500px;
 }
 
 .table-header{
@@ -140,7 +135,19 @@ a{
         order: 2;
     }
 
+    #main-part-order-4{
+        order: 4;
+    }
  }
+
+.my-border{
+    border: 2px solid #d2d2d2;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 
 /* sidebar */
 .ms-hidden{

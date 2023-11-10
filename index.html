@@ -14,14 +14,15 @@
 <body>
     
     <div id="upper-part"> 
-        <nav class="navbar navbar-expand navbar-light bg-light">
+        <nav class="navbar navbar-expand navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+                <a class="navbar-brand hidden" href="#"><img src="img/logo.svg" alt=""></a>
+                <a class="navbar-brand" href="#"><img class="logo-mobile" src="img/mobile-logo.png" alt=""></a>
                 <form class="d-flex">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control" type="search" placeholder=" Search" aria-label="Search">
                 </form>
 
-                <div class="collapse navbar-collapse ms-1" id="navbarSupportedContent">
+                <div class="ms-1" id="navbarSupportedContent">
                     <ul class="navbar-nav justify-content-between me-auto mb-2 mb-lg-0 d-flex">
 
                         <li class="nav-item hidden">
@@ -70,18 +71,24 @@
 
         <!-- breadcrumb section -->
         <div id="main-content">
-            
-                <div class="container-fluid my-5">
-                    <div class="row ">
+                <div class="container-fluid mb-5 bg-primary">
+                    <div class="row justify-content-lg-between">
                         <div class="col-12 col-md-4 col-lg-4">
-                            nuovo studente +
+                            <div class="col-content text-white">
+                                <h4>Boolean</h4>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-3 offset-lg-1">
-                            <h2>Boolean</h2>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="col-content text-white">
+                                <h4>125</h4>   
+                            </div>
+                            
                         </div>
 
-                        <div class="col-12 col-md-4 col-lg-2 offset-lg-1">
-                            125
+                        <div class="col-12 col-md-4 col-lg-3" id="top-part-main-order1">
+                            <div class="col-content text-white">
+                                <h4>nuovo studente +</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,9 +97,9 @@
 
            <!-- main section -->
                 <div class="container-fluid my-5">
-                    <div class="row flex-wrap-reverse gy-4 gx-3 mx-1 ">
+                    <div class="row gy-4 mx-1 ">
                         <!-- col-tabella -->
-                        <div class="col-12 col-lg-8 rounded-3">
+                        <div class="col-12 col-lg-8 rounded-3" >
                             <div class="table-header">
                                     <h3>List of users</h3>
                                 </div>
@@ -177,21 +184,23 @@
                                 </table>
                             </div>
                         </div>
-
+                        
+                        <!-- col to do -->
+                       <div class="col-12 col-lg-4 px-1" id="main-part-order-2">
+                            <div class="content-col border">
+                                <h2>Todo</h2>
+                            </div>  
+                       </div>
 
                           <!-- col faq -->
                         <div class="col-12 col-lg-8">
-                            faq
+                            <div class="content-col px-1"id="main-part-order-3">
+                                <h2>F.A.Q.</h2>
+                            </div>
                         </div>
                     
-                         <!-- col todo -->
-                        <div class="col-12 col-lg-4">
-                            to do
-                        </div>
-
-                      
                         <!-- col grafico -->
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-4" id="main-part-order-4">
                             <div class="content-col">
                                 <img src="img/stats.jpeg" alt="">
                             </div>

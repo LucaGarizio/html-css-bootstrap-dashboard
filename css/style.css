@@ -31,9 +31,39 @@ a{
     color: #fff;
 }
 
+    
+/* macro */
+#upper-part{
+    height: 5rem;
+    display: flex;
+    width: 100%;
+}
+
+#lower-part{
+    height: calc(100vh - 5rem);
+    width: 100%;
+    display: flex;
+}
+
+#side-bar{
+    width: 10rem;
+    height: 100%;
+    background-color: #000000;  
+}
+
+#main-content{
+    height: 100%;
+    width: calc(100% - 5rem);
+    overflow: auto;
+} 
+
 /* nav-bar */
 .navbar{
     width: 100%;
+}
+
+.logo-mobile{
+    width: 70px;
 }
 
 .navbar-collapse{
@@ -52,41 +82,43 @@ a{
     color: #fd7e14;
 }
 
-@media all and (min-width: 10px) and (max-width:991px) {
+@media only screen and (min-width: 992px){
+    .ms-hidden{
+        display:contents;
+    }
+
+    #side-bar{
+        width: 10rem;
+        
+    }
+
+    #main-content{
+        width: calc(100% - 10rem);
+    } 
+
+}
+
+@media all and (min-width:991px) {
+    .logo-mobile{
+        display: none;
+    }
+}
+
+@media all and (max-width:991px) {
     .hidden{
         display: none;
     }
 }
-    
 
 
-/* macro */
-#upper-part{
-    height: 5rem;
-    display: flex;
-    width: 100%;
-    border: 2px solid red;
+/* main */
+/* upper part main content */
+
+@media all and (max-width: 766px) {
+   #top-part-main-order1{
+    order: -1;
+   }
 }
-
-#lower-part{
-    height: calc(100vh - 5rem);
-    width: 100%;
-    display: flex;
-}
-
-#side-bar{
-    width: 10rem;
-    height: 100%;
-    background-color: #000000;  
-}
-
-
-#main-content{
-    height: 100%;
-    width: calc(100% - 5rem);
-    overflow: auto;
-} 
-
 
 .content-col img{
     max-width: 100%;
@@ -98,27 +130,25 @@ a{
 }
 
 
+/* central part main content */
+@media all and (max-width: 992px) {
+    #main-part-order-2{
+        order: 3;
+    }
+
+    #main-part-order-3{
+        order: 2;
+    }
+
+ }
+
 /* sidebar */
 .ms-hidden{
     display: none;
 }
 
 
-@media only screen and (min-width : 992px){
-    .ms-hidden{
-        display:contents;
-    }
 
-    #side-bar{
-        width: 20rem;
-        
-    }
-
-    #main-content{
-        width: calc(100% - 8rem);
-    } 
-
-}
 
 
 

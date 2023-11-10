@@ -1,0 +1,34 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#upper-part{
+    height: 5rem;
+    display: flex;
+    background-color: red;
+}
+
+
+#lower-part{
+    height: calc(100vh - 5rem);
+    background-color: yellow;
+    width: 100%;
+    display: flex;
+}
+
+#side-bar{
+    width: 15rem;
+    height: 100%;
+    background-color: #000000;
+    
+}
+
+#main-content{
+    height: 100%;
+    width: calc(100% - 15rem);
+    background-color: #141922;
+    overflow: auto;
+} 
+

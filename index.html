@@ -61,33 +61,69 @@
                 </div>
             </div>
         </nav>
-    </div>    
+    </div> 
+    
+    
     <!-- lower part  -->
     <!-- sidebar -->
     <div id="lower-part">
         <div id="side-bar">
+            <div class="container-fluid text-white">
+                <div class="row d-flex flex-column justify-content-between ">
+                    <div class="col-12">
+                        <div class="content-col">
+                            <ul>
+                                <li class="mt-4">
+                                    <a href=""><i class="fa-solid fa-house"></i><span class="sb-hidden">Home</span></a>
+                                </li>
+
+                                <li class="my-4">
+                                    <a href=""><i class="fa-solid fa-chart-simple"></i><span class="sb-hidden">Stats</span></a>
+                                </li>
+
+                                <li>
+                                    <a href=""><i class="fa-solid fa-signal"></i><span class="sb-hidden">Signal</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="content-col">
+                            <ul class="mt-5">
+                                <li>
+                                    <a href="">
+                                        <i class="fa-solid fa-gear"></i><span class="sb-hidden">Admin</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>        
+                    </div>  
+                </div>
+            </div> 
+        </div>
                
-        </div>    
 
         <!-- breadcrumb section -->
         <div id="main-content">
-                <div class="container-fluid mb-5 bg-primary">
-                    <div class="row justify-content-lg-between">
-                        <div class="col-12 col-md-4 col-lg-4">
-                            <div class="col-content text-white">
+                <div class="container-fluid mb-5 bg-primary text-white">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-5">
+                            <div class="col-content d-flex align-items-center">
                                 <h4>Boolean</h4>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4">
-                            <div class="col-content text-white">
+                        <div class="col-12 col-md-4 col-lg-5">
+                            <div class="col-content">
+                                <span>Studenti online negli ultimi 30 minuti</span>
                                 <h4>125</h4>   
                             </div>
                             
                         </div>
 
-                        <div class="col-12 col-md-4 col-lg-3" id="top-part-main-order1">
-                            <div class="col-content text-white">
-                                <h4>nuovo studente +</h4>
+                        <div class="col-12 col-md-4 col-lg-2" id="top-part-main-order1">
+                            <div class="col-content d-flex align-items-center">
+                                <h4>Nuovo studente +</h4>
                             </div>
                         </div>
                     </div>
@@ -97,18 +133,20 @@
 
            <!-- main section -->
                 <div class="container-fluid my-5">
-                    <div class="row gy-5 gx-3">
+                    <div class="row gy-3 gx-3">
                         <!-- col-tabella -->
                         <div class="col-12 col-lg-7">
-                            <div class="content-col my-border">
+                            <div class="content-col my-border px-3">
                                 <div class="table-header">
-                                    <h3>List of users</h3>
+                                    <h3 class="my-3">Prossime classi</h3>
                                 </div>
                                 
-                                <table class="table p-5">
+                                <table class="table mt-4">
                                     <thead>
                                         <tr>
                                             <th scope="col">Nome</th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
                                             <th scope="col">Data inizio</th>
                                             <th scope="col">ROI</th>
                                             <th scope="col">Stato</th>
@@ -179,6 +217,7 @@
                                             <td>the Bird</td>
                                             <td>@twitter</td>
                                             <td>@twitter</td>
+                                            <td>@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -194,10 +233,9 @@
 
                           <!-- col faq -->
                         <div class="col-12 col-lg-7">
-                            <div class="content-col my-border "id="main-part-order-3">
-
+                            <div class="content-col my-border" id="main-part-order-3">
                                 <div>
-                                    <h3>F.A.Q.</h3>
+                                    <h3 class="px-3">F.A.Q.</h3>
                                 </div>
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                     <div class="accordion-item">
@@ -249,10 +287,10 @@
                         <!-- col grafico -->
                         <div class="col-12 col-lg-5" id="main-part-order-4">
                             <div class="content-col my-border p-3">
-                                <div class="content-col my-border p-1">
+                                <div class="content-col my-border p-1 graphic">
                                     <img src="img/stats.jpeg" alt="">
 
-                                    <h4 class="ps-5">Utenti attivio</h4>
+                                    <h4 class="ps-5">Utenti attivi</h4>
                                     <table class="table d-flex">
                                        
                                         <tbody>
@@ -277,17 +315,12 @@
                                             </tr>
                                         </tbody>
                                       </table>
-
-                                </div>
-                                
-                            </div>
-
-                          
+                                </div>    
+                            </div>  
                         </div>  
                     </div>
                 </div>
            </section>
-
         </div>
     </div>
 

@@ -105,22 +105,34 @@
                
 
         <!-- BREADCRUMB SECTION -->
+        <!------------  -------------->
+            <!-- sezione non finita -->
+        <!------------  -------------->
         <div id="main-content">
                 <div class="container-fluid mb-5 bg-primary">
-                    <div class="row">
-                        <div class="col-12 col-md-4 col-lg-4 text-white">
-                            <div class="col-content d-flex align-items-center">
-                                <h4 class="d-flex">Boolean</h4>
-                                <span class="badge bg-primary">Primary</span>
-                                
-                            </div>
+                    <div class="row gy-sm-4 py-4 align-content-center">
+                        <div class="col-12 col-md-4 col-lg-5 text-white">
+                            <div class="col-content text-white">
+                                <nav aria-label="breadcrumb">
+                                    <h3 class="mt-md-3">Breadcrumb</h3>  
+                                </nav>
+
+                                <nav class="text-white" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page">3 app </li>
+                                    <li class="breadcrumb-item plus-hidden" aria-current="page">+</li>
+                                    <li class="breadcrumb-item bread-hidden">Boolean mobile app</li>
+                                    <li class="breadcrumb-item bread-hidden">Boolean web app</li>
+                                    <li class="breadcrumb-item bread-hidden">Boolean blog app</li>
+                                </ol>
+                                </nav>
+                            </div>  
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-md-4 col-lg-3">
                             <div class="col-content text-white pt-md-4">
-                                <span>Studenti online negli ultimi 30 minuti</span>
+                                <span class="mt-sm-3">Studenti online negli ultimi 30 minuti</span>
                                 <h4 class="mt-2">125</h4>   
-                            </div>
-                            
+                            </div>   
                         </div>
 
                         <div class="col-12 col-md-4 col-lg-3 offset-lg-1" id="top-part-main-order1">
@@ -131,10 +143,11 @@
 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
-                                        <h5 id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+                                        <span id="offcanvasRightLabel">Inserisci nuovo studente</span>
                                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
-        <!-- OFFCANVAS -->
+
+                                <!-- OFFCANVAS -->
                                     <div class="offcanvas-body">
                                         <div class="container-fluid">
                                             <form action="#" method="post">
@@ -241,7 +254,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-success">Success</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>
                                     
                                     <tr>
@@ -253,7 +268,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-success">Success</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>     
 
                                     <tr>
@@ -265,7 +282,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-warning">Process</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>     
 
                                     <tr>
@@ -277,7 +296,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-danger">Failed</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>     
 
                                     <tr>
@@ -289,7 +310,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-success">Success</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>     
 
                                     <tr>
@@ -301,7 +324,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-success">Success</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>     
 
                                     <tr>
@@ -313,7 +338,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-success">Success</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>     
 
                                     <tr>
@@ -325,7 +352,9 @@
                                         <td class="text-center table-hidden">15 Feb 2021</td>
                                         <td class="text-center table-hidden">20%</td>
                                         <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-danger">Failed</button></td>
-                                        <td class="text-center"><button class="me-1"><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>   
+                                        <td class="text-center"><button class="btn btn-outline-dark"><i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button></td>   
                                     </tr>     
                                     </tbody>
                                 </table>

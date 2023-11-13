@@ -1,7 +1,7 @@
 /* DEBUG */
 [class*="col-"]{
     /* border: 1px solid black; */
-    min-height: 100px;
+    /* min-height: 100px; */
 }
 
 /* breakpoint */
@@ -84,6 +84,12 @@ ul{
    }
 }
 
+
+.breadcrumb li{
+    font-size: 0.8rem;
+    
+}
+
 .fa-plus{
     font-size: 1.2rem;
     margin-left: 0.5rem;
@@ -125,6 +131,10 @@ ul{
 /* table section */
 .table img{
     max-width: 20px;
+}
+
+.fa-trash-can{
+    background-color: white;
 }
 
 .table-hidden {
@@ -204,12 +214,20 @@ ul{
         display: contents;
     }
 
+    .plus-hidden{
+        display: none;
+    }
+
+    
+
 }
 
 @media  all and (min-width: 765px){
     .table-hidden{
         display:table-cell;
     }
+
+    
 }
 
 @media all and (max-width: 991px) {
@@ -228,4 +246,10 @@ ul{
     .navbar-hidden{
         display: none;
     }
+
+    .bread-hidden{
+        display: none;
+    }
+
+    
  }

@@ -111,33 +111,40 @@
         <div id="main-content">
                 <div class="container-fluid mb-5 bg-primary">
                     <div class="row gy-sm-4 py-4 align-content-center">
-                        <div class="col-12 col-md-4 col-lg-5 text-white">
+                        <div class="col-12 col-md-4 col-lg-6 text-white">
                             <div class="col-content text-white">
                                 <nav aria-label="breadcrumb">
                                     <h3 class="mt-md-3">Breadcrumb</h3>  
                                 </nav>
 
-                                <nav class="text-white" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                                <nav class="text-white" style="--bs-breadcrumb-divider: '>>'; color: white;" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item" aria-current="page">3 app </li>
-                                    <li class="breadcrumb-item plus-hidden" aria-current="page">+</li>
-                                    <li class="breadcrumb-item bread-hidden">Boolean mobile app</li>
-                                    <li class="breadcrumb-item bread-hidden">Boolean web app</li>
-                                    <li class="breadcrumb-item bread-hidden">Boolean blog app</li>
+                                    <li class="breadcrumb-item" aria-current="page">
+                                        <a class="bg-dark rounded-3 p-1" href="">3 app</a>
+                                    </li>
+                                    <li class="breadcrumb-item plus-hidden" aria-current="page">
+                                        <a class="bg-dark rounded-3 p-1"  href="">+</a>
+                                    </li>
+                                    <li class="breadcrumb-item bread-hidden">
+                                        <a class="bg-dark rounded-3 p-1" href="">Boolean mobile app</a>
+                                    </li>
+                                    <li class="breadcrumb-item bread-hidden">
+                                        <a class="bg-dark rounded-3 p-1" href="">Boolean web app</a>
+                                    </li>
                                 </ol>
                                 </nav>
                             </div>  
                         </div>
                         <div class="col-12 col-md-4 col-lg-3">
-                            <div class="col-content text-white pt-md-4">
+                            <div class="col-content text-white mt-md-3">
                                 <span class="mt-sm-3">Studenti online negli ultimi 30 minuti</span>
                                 <h4 class="mt-2">125</h4>   
                             </div>   
                         </div>
 
-                        <div class="col-12 col-md-4 col-lg-3 offset-lg-1" id="top-part-main-order1">
-                            <div class="col-content d-flex">
-                                <h5 class="d-flex align-items-center text-white">Nuovo studente</h5>
+                        <div class="col-12 col-md-4 col-lg-3" id="top-part-main-order1">
+                            <div class="col-content d-flex align-items-center">
+                                <h5 class="d-flex text-white mt-md-3">Nuovo studente</h5>
                                 
                                 <button class="btn type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
 
@@ -224,7 +231,7 @@
                 <div class="container-fluid position-relative">
                     <div class="row gy-4">
                         <!-- TABLE SECTION-->
-                        <div class="col-12 col-lg-7">
+                        <div class="col-12 col-lg-8">
                             <div class="content-col">
                                 <div class="content-col top-border title-bg-color">
                                     <h3 class="px-3 py-3">Prossime classi</h3>
@@ -362,7 +369,7 @@
                         </div>
                         
                         <!-- TO DO SECTION-->
-                       <div class="col-12 col-lg-5 " id="to-do-section">
+                       <div class="col-12 col-lg-4" id="to-do-section">
                             <div class="content-col top-border title-bg-color">
                                 <h3 class="px-3 py-3">Todo</h3>
                             </div>
@@ -392,7 +399,7 @@
                        </div>
 
                           <!-- FAQ SECTION -->
-                        <div class="col-12 col-lg-7">
+                        <div class="col-12 col-lg-8">
                             <div class="content-col title-bg-color" id="faq-section">
                                 <div class="top-border">
                                     <h3 class="py-3 px-3">F.A.Q.</h3>
@@ -445,7 +452,7 @@
                         </div>
                     
                         <!-- GRAPHIC SECTION -->
-                        <div class="col-12 col-lg-5 ms-position" id="graphic-section">
+                        <div class="col-12 col-lg-4 ms-position" id="graphic-section">
                             <div class="content-col top-border p-3">
                                 <div class="content-col full-border p-3 graphic">
                                     <img src="img/stats.jpeg" alt="">

@@ -78,7 +78,7 @@
                                 </li>
 
                                 <li class="my-4">
-                                    <a href=""><i class="fa-solid fa-chart-simple"></i><span class="sb-hidden">Stats</span></a>
+                                    <a href=""><i class="fa-solid fa-chart-simple"></i><span class="sb-hidden"> Stats</span></a>
                                 </li>
 
                                 <li>
@@ -106,136 +106,184 @@
 
         <!-- breadcrumb section -->
         <div id="main-content">
-                <div class="container-fluid mb-5 bg-primary text-white">
+                <div class="container-fluid mb-5 bg-primary">
                     <div class="row">
-                        <div class="col-12 col-md-4 col-lg-5">
+                        <div class="col-12 col-md-4 col-lg-4 text-white">
                             <div class="col-content d-flex align-items-center">
-                                <h4>Boolean</h4>
+                                <h4 class="d-flex">Boolean</h4>
+                                <span class="badge bg-primary">Primary</span>
+                                
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-5">
-                            <div class="col-content">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="col-content text-white pt-md-4">
                                 <span>Studenti online negli ultimi 30 minuti</span>
-                                <h4>125</h4>   
+                                <h4 class="mt-2">125</h4>   
                             </div>
                             
                         </div>
 
-                        <div class="col-12 col-md-4 col-lg-2" id="top-part-main-order1">
-                            <div class="col-content d-flex align-items-center">
-                                <h4>Nuovo studente +</h4>
+                        <div class="col-12 col-md-4 col-lg-3 offset-lg-1" id="top-part-main-order1">
+                            <div class="col-content d-flex">
+                                <h5 class="d-flex align-items-center text-white">Nuovo studente</h5>
+                                
+                                <button class="btn type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="offcanvas-body">
+                                        <div class="container-fluid">
+                                            <form action="#" method="post">
+                                                <div class="row gx-5">
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Nome</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">Indirizzo Email</label>
+                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Password</label>
+                                                            <input type="password" class="form-control">
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Password</label>
+                                                            <input type="password" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                                                            <input type="text" class="form-control" >
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="formFileSm" class="form-label">Aggiungi File</label>
+                                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                        </div>
+
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            <label class="form-check-label" for="">
+                                                            Seleziona per proseguire
+                                                            </label>
+                                                        </div>
+
+                                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                                        <button type="submit" class="btn btn-warning">Svuota</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>    
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-           </section>
 
 
            <!-- main section -->
-                <div class="container-fluid my-5">
+                <div class="container-fluid my-5 position-relative">
                     <div class="row gy-3 gx-3">
                         <!-- col-tabella -->
                         <div class="col-12 col-lg-7">
-                            <div class="content-col my-border px-3">
-                                <div class="table-header">
-                                    <h3 class="my-3">Prossime classi</h3>
+                            <div class="content-col">
+                                <div class="content-col top-border">
+                                    <h3 class="px-3 py-3">Prossime classi</h3>
                                 </div>
-                                
-                                <table class="table mt-4">
+                                <table class="table table-hover">
                                     <thead>
-                                        <tr>
-                                            <th scope="col">Nome</th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">ROI</th>
-                                            <th scope="col">Stato</th>
-                                            <th scope="col">Azioni</th>
-                                        </tr>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th class="">Data inizio</th>
+                                        <th class="">ROI</th>
+                                        <th class="text-center">Stato</th>
+                                        <th>Azioni</th>
+                                    </tr>
                                     </thead>
 
                                     <tbody>
-                                        <tr>
-                                            <th scope="col">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>@mdo</td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>@fat</td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="col">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>@mdo</td>
-                                        </tr>
-    
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>@twitter</td>
-                                        </tr>
-    
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                        </tr>
-    
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                        </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg" alt=""> Classe 75</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                        <td class="">15 Feb 2021</td>
+                                        <td class="">20%</td>
+                                        <td class="text-center"><button type="button" class="btn p-1 rounded-3 btn-success">Success</button></td>
+                                        <td></td>   
+                                    </tr>     
                                     </tbody>
+                
                                 </table>
                             </div>
                         </div>
                         
                         <!-- col to do -->
-                       <div class="col-12 col-lg-5 " id="main-part-order-2">
-                            <div class="content-col my-border">
-                                <h3>Todo</h3>
-                            </div>  
+                       <div class="col-12 col-lg-5 " id="to-do">
+                            <div class="content-col top-border">
+                                <h3 class="px-3 py-3">Todo</h3>
+                            </div>
+                            <div class="content-col p-3 border">
+                                <div class="form-check border py-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      <span class="">Kickoff nuove classi</span>
+                                    </label>
+                                  </div>
+
+                                  <div class="form-check border py-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      <span>Lezione su bootstrap 5 in classe #75</span> 
+                                    </label>
+                                  </div>
+
+                                  <div class="form-check border py-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      <span>Default checkbox</span> 
+                                    </label>
+                                  </div>
+            
+                            </div>
                        </div>
 
                           <!-- col faq -->
                         <div class="col-12 col-lg-7">
                             <div class="content-col my-border" id="main-part-order-3">
                                 <div>
-                                    <h3 class="px-3">F.A.Q.</h3>
+                                    <h3 class="py-3 px-3">F.A.Q.</h3>
                                 </div>
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                     <div class="accordion-item">
@@ -285,9 +333,9 @@
                         </div>
                     
                         <!-- col grafico -->
-                        <div class="col-12 col-lg-5" id="main-part-order-4">
-                            <div class="content-col my-border p-3">
-                                <div class="content-col my-border p-1 graphic">
+                        <div class="col-12 col-lg-5 ms-position" id="main-part-order-4">
+                            <div class="content-col top-border p-3">
+                                <div class="content-col full-border p-1 graphic">
                                     <img src="img/stats.jpeg" alt="">
 
                                     <h4 class="ps-5">Utenti attivi</h4>

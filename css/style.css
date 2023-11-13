@@ -27,12 +27,6 @@ ul{
     margin: 0 -15px;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-
 
 /* macro */
 #upper-part{
@@ -82,9 +76,6 @@ a{
 }
 
 
-
-
-
 /* main */
 /* upper part main content */
 @media all and (max-width: 766px) {
@@ -102,13 +93,9 @@ a{
 }
 
 .offcanvas.show{
-    width: 50%;
+    width: 100%;
 }
 
-
-.content-col img{
-    max-width: 500px;
-}
 
 .table-header{
     border-bottom: 1px solid grey;
@@ -117,29 +104,18 @@ a{
 
 
 /* central part main content */
-@media all and (max-width: 992px) {
-    #to-do{
-        order: 3;
-    }
-
-    #main-part-order-3{
-        order: 2;
-    }
-
-    #main-part-order-4{
-        order: 4;
-    }
- }
+.title-bg-color{
+    background-color: #f7f7f7;
+}
 
 .top-border{
-    border: 2px solid #e2e2e2;
+    border: 1px solid #e2e2e2;
     border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    
+    border-top-left-radius: 10px;   
 }
 
 .full-border{
-    border: 2px solid #e2e2e2;
+    border: 1px solid #e2e2e2;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -151,15 +127,23 @@ a{
     max-width: 20px;
 }
 
- 
+.table-hidden {
+    display: none;
+}
+
+
 
 /* graphic section */
 .graphic img{
     max-width: 100%;
 }
 
-/* todo section */
+#graphic-section a{
 
+}
+
+
+/* todo section */
 #to-do input{
     margin-left: 0.1rem;
 }
@@ -167,6 +151,7 @@ a{
 #to-do span{
     margin-left: 0.5em;
 }
+
 
 /* sidebar */
 #side-bar .container-fluid{
@@ -177,7 +162,12 @@ a{
     height: 100%;
 }
 
-.ms-hidden{
+#side-bar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-hidden{
     display: none;
 }
 
@@ -187,21 +177,14 @@ a{
 .fa-gear{
     font-size: 1.5rem;
     margin-right: 0.5rem;
-    
 }
-
-.sb-hidden{
-    display: none;
-}
-
-
 
 
 /* mediaquery */
 @media only screen and (min-width: 991px){
     .ms-position{
         position: absolute;
-        top: 50%;
+        top: 37%;
         right: 0.2%;
     }
 
@@ -217,17 +200,32 @@ a{
         width: calc(100vhv - 10rem);
     }
 
-    .sb-hidden{
+    .sidebar-hidden{
         display: contents;
     }
 
 }
 
-@media all and (max-width:991px) {
-    .hidden{
-        display: none;
+@media  all and (min-width: 765px){
+    .table-hidden{
+        display:table-cell;
+    }
+}
+
+@media all and (max-width: 991px) {
+    #to-do-section{
+        order: 3;
     }
 
-    
-} 
+    #faq-section{
+        order: 2;
+    }
 
+    #graphic-section{
+        order: 4;
+    }
+
+    .navbar-hidden{
+        display: none;
+    }
+ }

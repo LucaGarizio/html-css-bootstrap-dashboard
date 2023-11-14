@@ -74,7 +74,7 @@
                     <div class="col-12">
                         <div class="content-col">
                             <ul>
-                                <li class="mt-4">
+                                <li class="mt-5">
                                     <a href=""><i class="fa-solid fa-house"></i><span class="sidebar-hidden">Home</span></a>
                                 </li>
 
@@ -91,7 +91,7 @@
 
                     <div class="col-12">
                         <div class="content-col">
-                            <ul class="mt-5">
+                            <ul class="mt-4">
                                 <li>
                                     <a href="">
                                         <i class="fa-solid fa-gear"></i><span class="sidebar-hidden">Admin</span>
@@ -109,10 +109,15 @@
         <div id="main-content">
                 <div class="container-fluid mb-5 bg-primary">
                     <div class="row pt-4 pb-3">
-                        <div class="col-12 col-md-4 col-lg-6 text-white my-3">
+                        <div class="col-12 col-md-4 col-lg-5 text-white my-3 order-2 order-md-1">
                             <div class="col-content text-white">
-                                <nav aria-label="breadcrumb">
-                                    <h3>Boolean</h3>  
+                                <nav class="d-flex mt-md-2" aria-label="breadcrumb">
+                                    <h3>Boolean</h3> 
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item ms-2 mt-2" aria-current="page">
+                                            <a class="bg-dark rounded-3 p-1" href="">Piano blaze</a>
+                                        </li>
+                                    </ol>  
                                 </nav>
 
                                 <nav class="text-white" style="--bs-breadcrumb-divider: '>>'; color: white;" aria-label="breadcrumb">
@@ -129,20 +134,23 @@
                                     <li class="breadcrumb-item bread-hidden">
                                         <a class="bg-dark rounded-3 p-1" href="">Boolean web app</a>
                                     </li>
+                                    <li class="breadcrumb-item bread-hidden-first">
+                                        <a class="bg-dark rounded-3 p-1" href="">Boolean blog app</a>
+                                    </li>
                                 </ol>
                                 </nav>
                             </div>  
                         </div>
-                        <div class="col-12 col-md-4 col-lg-3 my-3">
+                        <div class="col-12 col-md-4 col-lg-4 my-3 order-3 order-md-2">
                             <div class="col-content text-white d-flex align-items-center">
                                 <h6 class="my-3">Studenti online negli ultimi 30 minuti</h6>  
                             </div>  
                             <h4 class="text-white">125</h4>     
                         </div>
 
-                        <div class="col-12 col-md-4 col-lg-3 my-3" id="top-part-main-order1">
+                        <div class="col-12 col-md-4 col-lg-2 offset-lg-1 my-3 order-1 order-md-3" id="">
                             <div class="col-content d-flex">
-                                <h6 class="d-flex text-white d-flex align-items-center">Nuovo studente</h6>
+                                <h6 class="d-flex text-white align-items-center">Nuovo studente</h6>
                                 <button class="btn type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -228,7 +236,7 @@
                 <div class="container-fluid position-relative">
                     <div class="row gy-5">
                         <!-- TABLE SECTION-->
-                        <div class="col-12 col-lg-8" id="table-section">
+                        <div class="col-12 col-lg-8 order-0" id="table-section">
                             <div class="content-col full-border">
                                 <div class="title-bg-color ">
                                     <h3 class=" p-2">Prossime classi</h3>  
@@ -366,7 +374,7 @@
                         </div>
                         
                         <!-- TO DO SECTION-->
-                       <div class="col-12 col-lg-4" id="to-do-section">
+                       <div class="col-12 col-lg-4 order-2 order-lg-1" id="to-do-section">
                             <div class="content-col full-border">
                                 <div class="title-bg-color ">
                                     <h3 class="p-2">Todo</h3>  
@@ -390,7 +398,7 @@
                       
                       
                         <!-- FAQ SECTION -->
-                        <div class="col-12 col-lg-8" id="faq-section">
+                        <div class="col-12 col-lg-8 order-1 order-lg-2" id="faq-section">
                             <div class="content-col full-border">
                                 <div class="title-bg-color ">
                                     <h3 class=" p-2">F.A.Q.</h3>  
@@ -445,7 +453,7 @@
                         </div>
                     
                         <!-- GRAPHIC SECTION -->
-                        <div class="col-12 col-lg-4 ms-position mb-lg-5 pb-5" id="graphic-section">
+                        <div class="col-12 col-lg-4 order-4 ms-position mb-lg-5 pb-5" id="graphic-section">
                             <div class="content-col full-border p-3">
                                 <div class="content-col full-border p-3 graphic">
                                     <img src="img/stats.jpeg" alt="">
@@ -470,6 +478,7 @@
 
     <!-- Javascrip -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
 </body>
 </html>

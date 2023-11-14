@@ -80,6 +80,11 @@ ul{
     min-height: 100px;
 }
 
+#side-bar a:hover{
+    background-color: grey;
+    padding: 10px;
+}
+
 #side-bar .row{
     height: 100%;
 }
@@ -127,7 +132,7 @@ ul{
 }
 
 .offcanvas.show{
-    width: 100%;
+    width: 60%;
 }
 
 .table-header{
@@ -159,6 +164,9 @@ ul{
     margin-right: 0.5rem;
 }
 
+
+
+
 .fa-trash-can{
     background-color: white;
 }
@@ -186,7 +194,7 @@ ul{
 
 
 /* mediaquery */
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1200px){
     .logo-mobile{
         display: none;
     }
@@ -206,16 +214,23 @@ ul{
     .plus-hidden{
         display: none;
     }
+
+    .width{
+        width: 40%;
+    }
+   
 }
 
 @media  all and (min-width: 765px){
     .table-hidden{
         display:table-cell;
     }  
+
+    
     
 }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1199px) {
     .navbar-hidden{
         display: none;
     }
@@ -223,6 +238,8 @@ ul{
     .bread-hidden{
         display: none;
     } 
+
+   
  
  }
 
